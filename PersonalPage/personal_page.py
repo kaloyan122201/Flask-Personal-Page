@@ -10,7 +10,7 @@ def index():
 @app.route("/about")
 def about():
     text = """
-       Hello my name is Kaloyan Hristov and I am born in Sofia,Bulgaria <br> since I was very young i had passion about programming <br>and currently Im learning about Flask so this is <br>a small project in Flask called 'Personal Page'.
+       Hello my name is Kaloyan Hristov and I was born in Sofia,Bulgaria <br> since I was very young i had passion about programming <br>and currently I'm learning about Flask so this is <br>a small project in Flask called 'Personal Page'.
     """
     return render_template("about.html", about_me = text)
 
@@ -30,4 +30,5 @@ def contact():
     # Ако е GET → просто показваш формата с render_template("contact.html").
     return render_template("contact.html")
 if __name__ == "__main__":
+
     app.run(debug=True)
